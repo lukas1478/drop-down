@@ -1,0 +1,35 @@
+/* Hide the dropdown container by default */
+.dropdown-container {
+    display: none;
+    position: absolute;
+    background-color: #0d0e0d;
+    min-width: 250px;
+    box-shadow: 0px 8px 16px 0px rgba(211, 12, 12, 0.2);
+    z-index: 1;
+}
+
+/* Style the trigger button */
+.trigger-button {
+    background-color: #b2e2b4;
+    color: black;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.trigger-button:hover {
+    background-color: #45a049;
+}
+
+/* Style the dropdown items */
+.dropdown-item {
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+    color: #333;
+}
+
+.dropdown-item:hover {
+    background-color: #ddd;
+}

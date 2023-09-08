@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="dropdown-item">
+        <!-- Trigger button for the dropdown -->
+        <button class="trigger-button">Open Dropdown</button>
+        
+        <!-- Container for the dropdown menu -->
+        <div class="dropdown-container">
+            <!-- Dropdown items -->
+            <a href="#"><img src="IMG1.PNG" height="200px" width="250px" class="dropdown-item"></a>
+            <a href="#"><img src="IMG2.PNG" height="200px" width="250px" class="dropdown-item"></a>
+            <a href="#"><img src="IMG4.PNG" alt="" height="200px" width="250px" class="dropdown-item"></a>
+            <a href="#"><img src="IMG5.PNG" alt="" height="200px" width="250px" class="dropdown-item"></a>
+            <a href="#"><img src="IMG3.PNG" alt="" height="200px" width="250px" class="dropdown-item"></a>
+            <a href="#"><img src="IMG6.PNG" alt="" height="200px" width="250px" class="dropdown-item"></a>
+        </div>
+    </div>
+    
+    <script>
+        // JavaScript to toggle the dropdown
+        const triggerButton = document.querySelector('.trigger-button');
+        const dropdownContainer = document.querySelector('.dropdown-container');
+
+        triggerButton.addEventListener('click', () => {
+            dropdownContainer.style.display = (dropdownContainer.style.display === 'block') ? 'none' : 'block';
+        });
+    </script>
+</body>
+</html>
